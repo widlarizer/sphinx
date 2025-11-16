@@ -645,7 +645,7 @@ class IndexInSectionTitleTransform(SphinxPostTransform):
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_transform(FootnoteDocnameUpdater)
     app.add_post_transform(SubstitutionDefinitionsRemover)
-    app.add_post_transform(BibliographyTransform)
+    # app.add_post_transform(BibliographyTransform)
     app.add_post_transform(CitationReferenceTransform)
     app.add_post_transform(DocumentTargetTransform)
     app.add_post_transform(IndexInSectionTitleTransform)
